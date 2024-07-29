@@ -1,4 +1,4 @@
-# CPU View
+# Y-Specs
 
 Aplicação simples feita em electron para mostrar informações do computador do usuário 
 juntamente com uma foto de perfil de escolha
