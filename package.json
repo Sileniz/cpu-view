@@ -1,0 +1,38 @@
+{
+  "name": "y-specs",
+  "productName": "Y-specs",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "keywords": [],
+  "author": "Walisson",
+  "license": "ISC",
+  "description": "Aplicação feita em electron para mostrar especificações do computador",
+  "devDependencies": {
+    "electron": "^31.3.0",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+  "appId": "com.sileniz.yspecs",
+  "files": [
+    "main.js",
+    "preload.js",
+    "renderer.js",
+    "index.html",
+    "style.css",
+    "assets/**/*"
+  ],
+  "directories": {
+    "output": "dist"
+  },
+  "mac": {
+    "category": "public.app-category.utilities"
+  },
+  "win": {
+    "target": "nsis"
+  }
+}
+}

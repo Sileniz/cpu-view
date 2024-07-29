@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Walisson">
+  <meta name="description" content="Simple app to show basic specs of your PC">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self';
+    script-src 'self' 'unsafe-inline';
+    style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+    img-src 'self' https://i.pinimg.com;
+    connect-src 'self';
+    font-src 'self' https://fonts.gstatic.com;
+    frame-src 'none';
+    object-src 'none';
+    base-uri 'self';
+    form-action 'self';
+  ">
+  <title>Y-Specs</title>
+  <link rel="stylesheet" href="style.css">
+  <script crossorigin src="renderer.js" defer></script>
+</head>
+
+<body>
+  <main>
+    <div class="borderScreen">
+      <section class="userInfo">
+        <div class="userInfo">
+          <img id="profilePicture" src="assets/profile.jpg" alt="profile-picture"
+            class="profile">
+           <input type="file" id="fileInput" accept="image/*">
+          <h1 id="userName"></h1>
+          <p id="osName"></p>
+        </div>
+      </section>
+      <section class="specsInfo">
+        <div class="cpuInfo">
+          <label for="cpu">CPU:</label>
+          <hr>
+          <h1 id="cpuName" name="cpu">CPU</h1>
+        </div>
+        <div class="ramInfo">
+          <label for="ram">RAM:</label>
+          <hr>
+          <h1 id="ramName" name="ram"></h1>
+        </div>
+      </section>
+      <section class="uptimeInfo">
+        <label for="uptime">Uptime:</label>
+        <p id="uptimeName" name="uptime"></p>
+      </section>
+    </div>
+  </main>
+</body>
+
+</html>
